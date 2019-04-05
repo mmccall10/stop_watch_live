@@ -1,0 +1,37 @@
+<section class="timer">
+  <div class="row">
+    <div class="column text-center">
+      <%= div(@timer, 60000) %>:<%= div(@timer, 1000) %>:<%= div(@timer, 10) %>
+    </div>
+  </div>
+
+</section>
+
+
+<div class="row">
+  <div class="column">
+    <%= unless @started do %>
+    <button class="button button-outline float-left" phx-click="reset">Reset</button>
+    <button class="button float-right" phx-click="start">Start</button>
+    <% else %>
+    <button class="button button-outline float-left" phx-click="lap">Lap</button>
+    <button class="button float-right" phx-click="stop">Stop</button>
+    <% end %>
+  </div>
+</div>
+<section class="row laps">
+  <table>
+    <tbody>
+      <tr>
+        <td>Lap 1</td>
+        <td class="text-right">00:39:45</td>
+
+      </tr>
+      <tr>
+        <td>Lap 2</td>
+        <td class="text-right">00:01:05</td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
