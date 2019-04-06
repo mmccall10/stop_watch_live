@@ -54,6 +54,12 @@ header section {
   flex-direction: column !important;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  font-size: .75em;
+  opacity: 0.5;
+}
 
 
 .button.button-outline:focus,
