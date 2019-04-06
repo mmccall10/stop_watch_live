@@ -3,6 +3,21 @@
 @import "./phoenix.css";
 @import "../../deps/phoenix_live_view/assets/css/live_view.css";
 
+body {
+  background: black;
+  color: white;
+}
+
+header {
+  background: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+}
+
+td,
+th {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+}
+
 .text-right {
   text-align: right;
 }
@@ -24,8 +39,34 @@
   padding: 4rem;
 }
 
+.fast {
+  color: #4DEEEA;
+  font-weight: bold;
+}
 
+.slow {
+  color: #F000FF;
+  font-weight: bold;
+
+}
 
 header section {
   flex-direction: column !important;
+}
+
+
+
+.button.button-outline:focus,
+.button.button-outline:hover,
+button.button-outline:focus,
+button.button-outline:hover,
+input[type='button'].button-outline:focus,
+input[type='button'].button-outline:hover,
+input[type='reset'].button-outline:focus,
+input[type='reset'].button-outline:hover,
+input[type='submit'].button-outline:focus,
+input[type='submit'].button-outline:hover {
+  border-color: #0069d9;
+  border-color: #0069d9;
+
 }
